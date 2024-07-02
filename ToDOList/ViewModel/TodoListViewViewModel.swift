@@ -11,6 +11,8 @@ import Foundation
 /// Primary Tab
 class ToDoListViewModel: ObservableObject {
     
+    @Published var showingMewItemView = false
+    
     init() {
         
     }
