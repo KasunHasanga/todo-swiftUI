@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State var email = ""
-    @State var password = ""
-    @State var userName = ""
+ 
+    @StateObject var viewModel = RegisterViewViewModel()
     
     var body: some View {
         NavigationView{
@@ -20,21 +19,25 @@ struct RegisterView: View {
                 
                 
                 Form {
-                    TextField("User Name",text:$userName)
+                    if !viewModel.errorMessage.isEmpty{
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(.red)
+                    }
+                    TextField("User Name",text:$viewModel.userName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .autocorrectionDisabled()
                     
-                    TextField("Email Address",text:$email)
+                    TextField("Email Address",text:$viewModel.email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    SecureField("Password" ,text: $password)
+                    SecureField("Password" ,text: $viewModel.password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                         .autocorrectionDisabled()
                     
                     
                     TDLButtton(title: "Register", background: .green){
-                        
+                        viewModel.register()
                     }
                    
                 }

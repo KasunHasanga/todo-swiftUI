@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @StateObject var viewModel = MainViewViewModel()
+    
     var body: some View {
-        VStack {
-            NavigationView{
-                LoginView()
-            }
+        
+        if viewModel.isSignedIn, !viewModel.curruntUserId.isEmpty{
+            ToDoListView()
+        } else {
+            LoginView()
         }
-        .padding()
+//        VStack {
+//            NavigationView{
+//                LoginView()
+//            }
+//        }
+//        .padding()
     }
 }
 

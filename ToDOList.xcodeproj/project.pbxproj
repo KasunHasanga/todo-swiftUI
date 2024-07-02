@@ -32,6 +32,7 @@
 		BF6ED55E2C2E76FF00C60961 /* ToDOListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6ED55D2C2E76FF00C60961 /* ToDOListApp.swift */; };
 		BF6ED5622C2E770100C60961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6ED5612C2E770100C60961 /* Assets.xcassets */; };
 		BF6ED5652C2E770100C60961 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6ED5642C2E770100C60961 /* Preview Assets.xcassets */; };
+		BF7C0AFC2C33D02800C17915 /* extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7C0AFB2C33D02800C17915 /* extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		BF6ED55D2C2E76FF00C60961 /* ToDOListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDOListApp.swift; sourceTree = "<group>"; };
 		BF6ED5612C2E770100C60961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF6ED5642C2E770100C60961 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF7C0AFB2C33D02800C17915 /* extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				BF6ED5612C2E770100C60961 /* Assets.xcassets */,
 				BF6ED55D2C2E76FF00C60961 /* ToDOListApp.swift */,
 				BF142FB02C2EA0AB0001DDB4 /* GoogleService-Info.plist */,
+				BF7C0AFB2C33D02800C17915 /* extention.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				BF142FC12C2EB35A0001DDB4 /* RegisterView.swift in Sources */,
 				BF142FC52C2EB3B00001DDB4 /* User.swift in Sources */,
 				BF142FB92C2EB3010001DDB4 /* ProfileView.swift in Sources */,
+				BF7C0AFC2C33D02800C17915 /* extention.swift in Sources */,
 				BF142FCD2C2EB4550001DDB4 /* ToDoListItemViewViewModel.swift in Sources */,
 				BF142FD12C2EB4700001DDB4 /* LoginViewViewModel.swift in Sources */,
 				BF6ED55E2C2E76FF00C60961 /* ToDOListApp.swift in Sources */,
