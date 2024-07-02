@@ -82,10 +82,10 @@
 				BF142FB62C2EB2730001DDB4 /* MainView.swift */,
 				BF142FB82C2EB3010001DDB4 /* ProfileView.swift */,
 				BF142FBA2C2EB32C0001DDB4 /* ToDoListItemView.swift */,
+				BF142FC22C2EB3820001DDB4 /* ToDoListView.swift */,
 				BF142FBC2C2EB3400001DDB4 /* NewItemView.swift */,
 				BF142FBE2C2EB34C0001DDB4 /* LoginView.swift */,
 				BF142FC02C2EB35A0001DDB4 /* RegisterView.swift */,
-				BF142FC22C2EB3820001DDB4 /* ToDoListView.swift */,
 				BF142FD82C2EB7F20001DDB4 /* HeaderView.swift */,
 				BF142FDA2C2ED7CD0001DDB4 /* TDLButtton.swift */,
 			);
