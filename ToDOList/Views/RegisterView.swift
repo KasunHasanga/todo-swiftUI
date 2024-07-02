@@ -22,12 +22,15 @@ struct RegisterView: View {
                 Form {
                     TextField("User Name",text:$userName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocorrectionDisabled()
                     
                     TextField("Email Address",text:$email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     SecureField("Password" ,text: $password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                        .autocorrectionDisabled()
                     
                     
                     TDLButtton(title: "Register", background: .green){
