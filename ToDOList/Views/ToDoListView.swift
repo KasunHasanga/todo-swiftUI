@@ -9,14 +9,17 @@ import FirebaseFirestoreSwift
 import SwiftUI
 
 struct ToDoListView: View {
-    @StateObject var viewModel = ToDoListViewModel()
+    @StateObject var viewModel : ToDoListViewModel
     @FirestoreQuery var items : [ToDoListItem]
     
-    private let userId:String
-    
     init(userId:String) {
-        self.userId = userId
-        self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
+        self._items = FirestoreQuery(
+            collectionPath: "users/\(userId)/todos"
+        )
+        
+        self._viewModel = StateObject(
+            wrappedValue: ToDoListViewModel(userId:userId)
+        )
     }
     
     var body: some View {
