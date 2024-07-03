@@ -33,6 +33,7 @@
 		BF6ED5622C2E770100C60961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6ED5612C2E770100C60961 /* Assets.xcassets */; };
 		BF6ED5652C2E770100C60961 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6ED5642C2E770100C60961 /* Preview Assets.xcassets */; };
 		BF7C0AFC2C33D02800C17915 /* extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7C0AFB2C33D02800C17915 /* extention.swift */; };
+		BF7C0AFE2C352D5100C17915 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7C0AFD2C352D5100C17915 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		BF6ED5612C2E770100C60961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF6ED5642C2E770100C60961 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF7C0AFB2C33D02800C17915 /* extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extention.swift; sourceTree = "<group>"; };
+		BF7C0AFD2C352D5100C17915 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				BF6ED55D2C2E76FF00C60961 /* ToDOListApp.swift */,
 				BF142FB02C2EA0AB0001DDB4 /* GoogleService-Info.plist */,
 				BF7C0AFB2C33D02800C17915 /* extention.swift */,
+				BF7C0AFD2C352D5100C17915 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				BF6ED5652C2E770100C60961 /* Preview Assets.xcassets in Resources */,
 				BF6ED5622C2E770100C60961 /* Assets.xcassets in Resources */,
+				BF7C0AFE2C352D5100C17915 /* Launch Screen.storyboard in Resources */,
 				BF142FB12C2EA0AB0001DDB4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +405,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -431,6 +436,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
