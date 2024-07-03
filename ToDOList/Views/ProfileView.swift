@@ -18,44 +18,7 @@ struct ProfileView: View {
             VStack{
                 
                 if let user = viewModel.user {
-                    Image(systemName:"person.circle.fill" )
-                        .resizable()
-                        .aspectRatio(contentMode:  .fit)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        .frame(width: 125,height: 125)
-                        .padding()
-                    
-                    VStack(alignment: .leading){
-                        HStack{
-                            Text("User Name")
-                                .bold()
-                            Text(user.name)
-                        }
-                        .padding()
-                        
-                        HStack{
-                            Text("Email")
-                                .bold()
-                            Text(user.email)
-                        }
-                        .padding()
-                        HStack{
-                            Text("Member Since")
-                                .bold()
-                            Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .shortened))")
-                        }
-                        .padding()
-                        
-                        
-                    }
-                    
-                    Button("LogOut"){
-                        viewModel.logOut()
-                    }
-                    .tint(.red)
-                    .padding()
-                    Spacer()
-                    
+                    profile(user:user)
                 }else{
                     Text("Loading")
                 }
@@ -64,6 +27,47 @@ struct ProfileView: View {
             viewModel.fetchUser()
         }
     
+    }
+    @ViewBuilder
+  func  profile(user:User)-> some View{
+        Image(systemName:"person.circle.fill" )
+            .resizable()
+            .aspectRatio(contentMode:  .fit)
+            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            .frame(width: 125,height: 125)
+            .padding()
+        
+        VStack(alignment: .leading){
+            HStack{
+                Text("User Name")
+                    .bold()
+                Text(user.name)
+            }
+            .padding()
+            
+            HStack{
+                Text("Email")
+                    .bold()
+                Text(user.email)
+            }
+            .padding()
+            HStack{
+                Text("Member Since")
+                    .bold()
+                Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .shortened))")
+            }
+            .padding()
+            
+            
+        }
+        
+        Button("LogOut"){
+            viewModel.logOut()
+        }
+        .tint(.red)
+        .padding()
+        Spacer()
+        
     }
 }
 
